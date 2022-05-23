@@ -7,7 +7,9 @@
   </head>
   <body>
     <header class="main-page">
-      
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-main-logo" src="" alt="Логотип DEVICE">
+      </a>
       <label class="seach-navigation">
         <input type="text" name="amount" value="Текст поиска"></label>
         <input type="submit" value="Найти">
@@ -22,83 +24,96 @@
           </ul>
         </nav>
     </header>
-    <span class="catalog">КАТАЛОГ ТОВАРОВ
-      <input type="submit" value="+"></span>
-      <nav class="services">
+    <section class="catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+        <div class="+">
+          <button onclick="myFunction(open)" class="catalog">+</button>
+          <div id="catalog" class="catalog-item">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитныес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </div>
+        </div>
+    </section>
         <ul class="services-list">
-          <li class="services-name">
-          <a class="services-link" href="#">ДОСТАВКА</a></li>
-          <li class="services-name">
-          <a class="services-link" href="#">ГАРАНТИЯ</a></li>
-          <li class="services-name">
-          <a class="services-link" href="#">КОНТАКТЫ</a></li>
+          <li class="services-name">ДОСТАВКА</a></li>
+          <li class="services-name">ГАРАНТИЯ</a></li>
+          <li class="services-name">КОНТАКТЫ</a></li>
         </ul>
     <main class="main-index">
-      <section class="gallery">
-      <img class="slider-image" src="" alt="">
+     <section>
+      <!---->
+      <div class="main-Slayder">
+        <div class="services">
+        <label for="slaid1"></label>
+        <label for="slaid2"></label>
+        <label for="slaid3"></label>
+        </div>
+        <div class="adaptivSlayderlasekun">
+        <div class="abusteku-deagulus">
+          
+          
+          <p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно! Ведь<br>
+            мы неплохо заработаем, поднимая его на ваш этаж.
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Подробнее</span>
+            </button></p>
+            <P><b>ГАРАНТИЯ</b></P>
+            <p>Если из-за возгорания купленного у нас товара у вас<br>
+               сгорит дом- не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.<button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Подробнее</span>
+                </button></p>
+          
+                <P><b>КРЕДИТ</b></P>
+                <p>Залезть в долговую яму стало проще! Кредитные<br>
+                   консультанты подберут для вас наиболее выгодные<br>
+                    условия кредита. Выгодные для банка, разумеется<button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Подробнее</span>
+                    </button></p>
+      
+        </div>
+      
+        </div>
+      
+      </div>
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
-
       <button class="slider-button slider-next" type="button">
         <span class="visually-hidden">Следующее фото</span>
       </button>
-      <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-button-current" type="button">
-            <span class="visually-hidden">1 фото</span>
-              <h1>Порхает как бабочка,
-              жалит как пчела!</h1>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </p>
-            <a class="qadro-info" href="#">ПОДРОБНЕЕ</a>
-            <dl>
-              <dt>800 м</dt>
-              <dd>Дальность полета</dd>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-              </dl>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-button-current" type="button">
-            <span class="visually-hidden">2 фото</span>
-            <h1>Худеем правильно!</h1>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-              </p>
-            <a class="bracelet-info" href="#">ПОДРОБНЕЕ</a>
-            <dl>
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-              </dl>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-button-current" type="button">
-            <span class="visually-hidden">3 фото</span>
-            <h1>Делай селфи, как Бен Стиллер!</h1>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-              </p>
-            <a class="selfie-stick" href="#">ПОДРОБНЕЕ</a>
-            <dl>
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-              </dl>
-          </button>
-        </li>
-      </ol>
-    </section>
+      <section>
+        <input type="button" value="Доставим редкий товар под заказ">
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="appointment-form-name">
+              <label for="appointment-form-name" value="Введите имя">Ваше имя:</label>
+              <input type="text" id="appointment-name" name="appointment-name" placeholder="Введите имя">
+            </p>
+            <p class="appointment-form-email">
+              <label for="appointment-form-email" value="почта">Ваш e-mail:</label>
+              <input type="text" id="appointment-email" name="appointment-email" placeholder="e-mail">
+            </p>
+            <p class="appointment-form-need-item">
+              <label for="appointment-form-need-item" value="В свободной форме">Что нужно привезти:</label>
+              <input type="text" id="appointment-need-item" name="appointment-need-item" placeholder="В свободной форме">
+            <button class="button-send-order" type="submit">ОТПРАВИТЬ</button>
+          </p>
+          </form>
+        </button>
+      </section>
+      <!---->
+     </section>
         <section class="device-prewiew">
-       <figure class="virtual">
+       <div>
+         <figure class="virtual">
           <img src="#">
           <figcaption>Виртуальная реальность</figcaption>
         </figure>
-        <figure class="selfie">
+          <figure class="selfie">
           <img src="#">
           <figcaption>Моноподы для селфи</figcaption>
         </figure>
@@ -115,6 +130,7 @@
           <figcaption>Квадрокоптеры</figcaption>
         </figure>
       </section>
+
         <section class="contacts">
           <h2 class="contact-title">КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. 
@@ -168,17 +184,17 @@
  <section class="footer-social-list">
 <ul>
   <li class="footer-social-item">
-    <a class="button" href="#">
+    <a class="button" href="https://t.me/htmlacademy">
       <span class="visually-hidden">Telegram</span>
     </a>
   </li>
   <li class="footer-social-item">
-    <a class="button" href="#">
+    <a class="button" href="https://www.youtube.com/user/htmlacademyru">
       <span class="visually-hidden">Youtube</span>
     </a>
   </li>
   <li class="footer-social-item">
-    <a class="button" href="#">
+    <a class="button" href="https://twitter.com/htmlacademy_ru">
       <span class="visually-hidden">Twitter</span>
     </a>
   </li>
@@ -196,6 +212,10 @@
         <li class="footer-services-name">
         <a class="footer-services-link" href="#">КОНТАКТЫ</a></li>
       </ul>
+
+
+
+    
     </footer>
   </body>
 </html>

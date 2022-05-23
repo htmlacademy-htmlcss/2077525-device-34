@@ -1,0 +1,80 @@
+<section class="gallery">
+<img class="slider-image" src="" alt="">
+<button class="slider-button slider-prev" type="button">
+  <span class="visually-hidden">Предыдущее фото</span>
+</button>
+<button class="slider-button slider-next" type="button">
+  <span class="visually-hidden">Следующее фото</span>
+</button>
+<ol class="slider-pagination">
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button slider-button-current" type="button">
+      <section><span class="visually-hidden">1 фото</span>
+        <h1>Порхает как бабочка,
+        жалит как пчела!</h1>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+        </p>
+      <a class="qadro-info" href="#">ПОДРОБНЕЕ</a>
+      <dl>
+        <dt>800 м</dt>
+        <dd>Дальность полета</dd>
+        <dt>50 м</dt>
+        <dd>Радиус поражения</dd>
+        </dl>
+    </button>
+  </li>
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button slider-button-current" type="button">
+      <span class="visually-hidden">2 фото</span>
+      <h1>Худеем правильно!</h1>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+        </p>
+      <a class="bracelet-info" href="#">ПОДРОБНЕЕ</a>
+      <dl>
+        <dt>48 часов</dt>
+        <dd>Без подзарядки</dd>
+        </dl>
+    </button>
+  </li>
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button slider-button-current" type="button">
+      <span class="visually-hidden">3 фото</span>
+      <h1>Делай селфи, как Бен Стиллер!</h1>
+        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+        </p>
+      <a class="selfie-stick" href="#">ПОДРОБНЕЕ</a>
+      <dl>
+        <dt>8,5 м</dt>
+        <dd>Длина палки</dd>
+        <dt>5 кг</dt>
+        <dd>Вес палки</dd>
+        <dt>Карбон</dt>
+        <dd>Материал</dd>
+        </dl>
+    </button>
+    </section>
+    </li>
+    </ol>
+  </section>
+
+
+
+
+
+
+
+
+<P><b>ДОСТАВКА</b></P>
+<p>Мы с удовольствием доставим ваш товар прямо<br>
+  к вашему подъезду совершенно бесплатно! Ведь<br>
+  мы неплохо заработаем, поднимая его на ваш этаж.</p>
+  <P><b>ГАРАНТИЯ</b></P>
+  <p>Если из-за возгорания купленного у нас товара у вас<br>
+     сгорит дом- не переживайте, мы выдадим вам новый.<br>
+      Товар, не дом, конечно же.</p>
+
+      <P><b>КРЕДИТ</b></P>
+      <p>Залезть в долговую яму стало проще! Кредитные<br>
+         консультанты подберут для вас наиболее выгодные<br>
+          условия кредита. Выгодные для банка, разумеется</p>
