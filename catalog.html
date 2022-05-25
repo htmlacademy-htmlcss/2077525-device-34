@@ -43,12 +43,146 @@
                         </li>
               </ul>
           </header>
+          <!--Блок фильтров списка товаров-->
+          <span><h2>Фильтры:</h2></span>
           <section class="catalog-product">
               <h2 class="visually-hidden">Список товаров с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                  <!--Табличка с сортировкой по цвету checkbox-->
+                  <fieldset class="catalog-filter-group">
+                      <legend class="catalog-color">Цвет</legend>
+                      <ul class="catalog-filter-list">
+                          <li class="catalog-filter-color">
+                      <label class="control">
+                          <input class="control-input" type="checkbox" name="black" checked>
+                          Черный
+                        </label>
+                          </li>
+                          <li class="catalog-filter-color">
+                      <label class="control">
+                            <input class="control-input" type="checkbox" name="white" checked>
+                            Белый
+                        </label>
+                            </li>
+                            <li class="catalog-filter-color">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="blue">
+                            Синий
+                        </label>
+                            </li>
+                            <li class="catalog-filter-color">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="Red">
+                            Красный
+                            </label>
+                            </li>
+                            <li class="catalog-filter-color">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="Pink">
+                             Розовый
+                        </label>
+                            </li>
+                       </ul>
+                  </fieldset>
+                  <!--Конец таблички с сортировкой по цвету-->
+                  <!-- ТАбличка наличия bluetooth radio (name должен быть всегда одинаковый)-->
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-bluetooth">Bluetooth</legend>
+                    <ul class="catalog-filter-bluetooth">
+                        <li class="catalog-filter">
+                    <label class="control">
+                        <input class="control-input" type="radio" name="availability" value="yes" checked>
+
+                        Есть
+                    </label>
+                        </li>
+                        <li class="catalog-filter">
+                        <label class="control">
+                        <input class="control-input" type="radio" name="availability" value="no">
+
+                        Нет 
+                    </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!--Конец таблички bluetooth radio -->
                   <button class="button" type="submit">Показать</button>
               </form>
+              <!--Менюшка сортировки цены-->
+              <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="expensive">Дорогие</option>
+                  <option value="cheap">Дешевые</option>
+              </select>
+              <!--Конец менюшки сортировки цены-->
+              <!--Список Карточек товаров-->
+              <ul class="poduct-list">
+              <li class="product-card">
+                  <a class="product-card-link" href="product.html">
+                      <img class="product-card-image" src="" alt="">
+                      <h3 class="product-card-title">Любительская селфи-палка</h3>
+                  </a>
+                  <span class="product-card-price">500₽</span>
+                  <!--<a class="product-card-button button" href="#">Купить</a>-->
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="product.html">
+                        <img class="product-card-image" src="" alt="">
+                        <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <span class="product-card-price">1500₽</span>
+                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                  </li>
+                  <li class="product-card">
+                    <a class="product-card-link" href="product.html">
+                        <img class="product-card-image" src="" alt="">
+                        <h3 class="product-card-title">Непоопляемая селфи-палка</h3>
+                    </a>
+                    <span class="product-card-price">2500₽</span>
+                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                  </li>
+                  <li class="product-card">
+                    <a class="product-card-link" href="product.html">
+                        <img class="product-card-image" src="" alt="">
+                        <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
+                    </a>
+                    <span class="product-card-price">1500₽</span>
+                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                  </li>
+            </ul>
+            <!--Конец списка Карточек товаров-->
+            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+            <!--пагинация, Переключение страниц-->
+            <ul class="pagination">
+<li class="pagination-item">
+    <a class="pagination-link pagination-prev pagination-disabled">
+        <span class="button-prew">Назад</span>
+    </a>
+</li>
+<li class="paginatio-item">
+    <a class="pagination-link pagination-current">1</a>
+</li>
+<li class="paginatio-item">
+    <a class="pagination-link" href="#">2</a>
+</li>
+<li class="paginatio-item">
+    <a class="pagination-link" href="#">3</a>
+</li>
+<li class="paginatio-item">
+    <a class="pagination-link pagination-current">...</a>
+</li>
+<li class="paginatio-item">
+    <a class="pagination-link" href="#">15</a>
+</li>
+<li class="pagination-item">
+<a class="pagination-link pagination-next" href="#">
+    <span class="button-next">Вперед</span>
+</a>
+</li>
+            </ul>
+            <!--Конец. пагинация, Переключение страниц-->
           </section>
+          <!--Конец  блока фильтров списка товаров-->
       </main>
 
 
@@ -92,10 +226,7 @@
           <li class="footer-services-name">
           <a class="footer-services-link" href="#">КОНТАКТЫ</a></li>
         </ul>
-  
-  
-  
-      
+        </div>
       </footer>
 </body>
 </html>

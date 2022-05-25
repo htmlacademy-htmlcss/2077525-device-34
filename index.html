@@ -24,16 +24,16 @@
           </ul>
         </nav>
     </header>
-    <section class="catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+    <label><section class="catalog"><a href="#">КАТАЛОГ ТОВАРОВ</a>
         <div class="+">
-          <button onclick="myFunction(open)" class="catalog">+</button>
+          <button onclick="myFunction(open)" class="catalog">+</button></label>
           <div id="catalog" class="catalog-item">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитныес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+            <div><a href="#">Виртуальная реальность</a></div>
+            <div><a href="#">Моноподы для селфи</a></div>
+            <div><a href="#">Экшн-камеры</a></div><br>
+            <div><a href="#">Фитныес-браслеты</a></div></li>
+            <div><a href="#">Умные часы</a></div><br>
+            <div><a href="#">Квадрокоптеры</a></div>
           </div>
         </div>
     </section>
@@ -45,16 +45,68 @@
     <main class="main-index">
      <section>
       <!---->
-      <div class="main-Slayder">
-        <div class="services">
-        <label for="slaid1"></label>
-        <label for="slaid2"></label>
-        <label for="slaid3"></label>
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+      <div class='slider'>
+        <div class='slide'>
+        <dl>
+          <dt>
+            <h1>Порхает как бабочка,
+          жалит как пчела!</h1>
+          </dt>
+           <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру. 
+           </dd>
+        </dl>
+        </p><img src="">
+        <dl>
+          <dt>
+            <h3>800 м</h3>
+          </dt>
+          <dd>Дальность полета</dd>
+        </dl>
+        <dl>
+        <dt><h3>50 м</h3></dt><dd>Радиус поражения</dd>
+      </dl>
+    </div>
+        <div class='slide'><dl><dt><h1>Худеем правильно!</h1></dt>
+          <dd>Мотивирующие фитнес-браслеты помогут найтив себе силы не пропускать занятия и соблюдать диету.</dd>
+        </dl>
+        </p><img src="">
+        <dl>
+          <dt><h3>48 часов</h3></dt>
+          <dd>Без подзарядки</dd>
+        </dl>
+      </div>
+        <div class='slide'><dl><dt><h1>Делай селфи, как Бен Стиллер!</h1></dt>
+          <dd>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5кг.</dd>
+        </dl>
+        </p><img src="">
+        <dl>
+          <dt><h3>8,5 м</h3></dt>
+          <dd>длина палки</dd>
+        </dl>
+        <dl>
+          <dt><h3>5 кг</h3></dt>
+          <dd>Вес палки</dd>
+        </dl>
+        <dl>
+          <dt><h3>Карбон</h3></dt>
+          <dd>Материал</dd>
+        </dl>
+      </div>
         </div>
-        <div class="adaptivSlayderlasekun">
-        <div class="abusteku-deagulus">
-          
-          
+     <div class="container" id="conteiner">
+       <span class="item"><a href="#"><img src="#">Виртуальная реальность</a></span>
+       <span class="item"><a href="catalog.html"><img src="#">Моноподы для селфи</a></span>
+       <span class="item"><a href="#"><img src="#">Фитнес-браслеты</a></span>
+       <span class="item"><a href="#"><img src="#">Умные часы</a></span>
+       <span class="item"><a href="#"><img src="#">Квадрокоптеры</a></span> 
+     </div> 
+             <P><b>ДОСТАВКА</b></P>
           <p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь<br>
             мы неплохо заработаем, поднимая его на ваш этаж.
@@ -80,12 +132,7 @@
         </div>
       
       </div>
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следующее фото</span>
-      </button>
+
       <section>
         <input type="button" value="Доставим редкий товар под заказ">
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -106,30 +153,8 @@
         </button>
       </section>
       <!---->
-     </section>
-        <section class="device-prewiew">
-       <div>
-         <figure class="virtual">
-          <img src="#">
-          <figcaption>Виртуальная реальность</figcaption>
-        </figure>
-          <figure class="selfie">
-          <img src="#">
-          <figcaption>Моноподы для селфи</figcaption>
-        </figure>
-        <figure class="fitness">
-          <img src="#">
-          <figcaption>Фитнес-браслеты</figcaption>
-        </figure>
-        <figure class="smart-wach">
-          <img src="#">
-          <figcaption>Умные часы</figcaption>
-        </figure>
-        <figure class="qadro">
-          <img src="#">
-          <figcaption>Квадрокоптеры</figcaption>
-        </figure>
-      </section>
+
+        
 
         <section class="contacts">
           <h2 class="contact-title">КОНТАКТЫ</h2>
