@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КАТАЛОГ</title>
-</head>
+<html lang="ru">
+  <head>
+    <title>Испытание: другой вариант главной</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/!HTMLACADEMY/device/2077525-device-34/CSS/1.css">
+  </head>
+  <body>
+    <header class="second-page">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-main-logo" src="image/logo.png" alt="logo-DEVICE"></a>
+      <label class="seach-navigation">
+        <form>
+          <p><input type="search" name="amount" placeholder="Текст поиска"> 
+          <input type="submit" value="Найти"></p>
+         </form>
+        <nav class="main-navigation">
+          <ul class="navigatoin-list">
+            <li class="navigation-item1">
+              <a class="navigation-link" href="#">Коля Петухов</a></li>
+            <li class="navigation-item2">
+            <a class="navigation-link" href="#">Выйти</a></li>
+            <li class="navigation-item3">
+            <a class="navigation-link" href="#">Сравнить</a></li>
+            <li class="navigation-item4">
+            <a class="navigation-link" href="#">Корзина</a></li>
+          </ul>
+        </nav>
+  <div class="catalog-item">
+    <button class="dropbtn">Каталог товаров
+      <span class="catalog-item-open">+</span>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Виртуальная реальность</a>
+      <a href="#">Фитнес-браслеты</a>
+      <a href="#">Квадрокоптеры</a>
+      <a href="catalog.html">Моноподы для селфи</a>
+      <a href="#">Умные часы</a>
+      <a href="#">Квадрокоптеры</a>
+    </div>
+  </div>
 
-<body>
-    <!--HEaDDDDEEERRRRR-->
-    <header class="main-page">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-main-logo" src="" alt="Логотип DEVICE">
-        </a>
-        <label class="seach-navigation">
-          <input type="text" name="amount" value="Текст поиска"></label>
-          <input type="submit" value="Найти">
-          <nav class="main-navigation">
-            <ul class="navigatoin-list">
-              <li class="navigation-item1">
-              <a class="navigation-link" href="#">Войти</a></li>
-              <li class="navigation-item2">
-              <a class="navigation-link" href="#">Сравнить</a></li>
-              <li class="navigation-item3">
-              <a class="navigation-link" href="#">Корзина</a></li>
-            </ul>
-          </nav>
+        <ul class="services-list">
+          <li class="services-name"><a href="#">ДОСТАВКА</li></a>
+          <li class="services-name"><a href="#">ГАРАНТИЯ</li></a>
+          <li class="services-name"><a href="#">КОНТАКТЫ</li></a>
+        </ul>
       </header>
       <!--MAAAAAAIIINNNN-->
       <main class="man-inner">
@@ -44,7 +63,7 @@
               </ul>
           </header>
           <!--Блок фильтров списка товаров-->
-          <span><h2>Фильтры:</h2></span>
+          <span><h2>Фильтр:</h2></span>
           <section class="catalog-product">
               <h2 class="visually-hidden">Список товаров с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -109,7 +128,9 @@
                   <button class="button" type="submit">Показать</button>
               </form>
               <!--Менюшка сортировки цены-->
+              <span><h2>сортировка:</h2></span>
               <select class="select-control" aria-label="Сортировка">
+                
                   <option value="popular">Популярные</option>
                   <option value="expensive">Дорогие</option>
                   <option value="cheap">Дешевые</option>
@@ -123,7 +144,7 @@
                       <h3 class="product-card-title">Любительская селфи-палка</h3>
                   </a>
                   <span class="product-card-price">500₽</span>
-                  <!--<a class="product-card-button button" href="#">Купить</a>-->
+                  <a class="product-card-button button" href="#">Подробнее</a>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="product.html">
@@ -131,7 +152,7 @@
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                     </a>
                     <span class="product-card-price">1500₽</span>
-                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                    <a class="product-card-button button" href="#">Подробнее</a>
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="product.html">
@@ -139,7 +160,7 @@
                         <h3 class="product-card-title">Непоопляемая селфи-палка</h3>
                     </a>
                     <span class="product-card-price">2500₽</span>
-                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                    <a class="product-card-button button" href="#">Подробнее</a>
                   </li>
                   <li class="product-card">
                     <a class="product-card-link" href="product.html">
@@ -147,7 +168,7 @@
                         <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
                     </a>
                     <span class="product-card-price">1500₽</span>
-                    <!--<a class="product-card-button button" href="#">Купить</a>-->
+                    <a class="product-card-button button" href="#">Подробнее</a>
                   </li>
             </ul>
             <!--Конец списка Карточек товаров-->
