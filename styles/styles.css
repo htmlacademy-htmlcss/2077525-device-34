@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,30 +18,25 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
   
 }
 
 body {
-font-family: "Rubik", sans-serif;
-font-size: 18px;
-line-height: 30px;
-color: #444444;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-p {
-font-family: "Rubik", sans-serif;
-font-size: 18px;
-line-height: 30px;
-color: #444444;
-}
-
-.main-page, .second-page {
+.header-page {
   background: #FFE17F;
   color: #000000;
-  background-size: 100% auto;
+  display: grid;
 }
+
 
 /*Войти, сравнить, корзина*/
 .main-navigation {
@@ -50,17 +45,20 @@ color: #444444;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: inherit;
   text-decoration: none;
-  text-transform: uppercase; 
   color: #000000;
 }
 
 
 .navigation-link {
+display: flex;
+align-items: center;
 text-decoration: none;
-color: #000000;
-text-transform: uppercase;
+}
+
+.navigation-link-exit {
+opacity: 0.3;
+text-decoration: none;
 }
 
 
@@ -72,6 +70,7 @@ text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   color: #242424;
+  padding: 0px;
 }
 
 /*кнопка каталога, доставка, гарантия, контакты*/
@@ -80,15 +79,33 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-line-height: 21.13px;
-text-decoration: none;
+  line-height: 21px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+
+.seach, .seach-line {
+  font-family: "Rubik", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
 color: #000000;
 }
 
+.seach-line {
+display: flex;
+align-items: center;
+}
+
+.seach {
+  text-align: center;
+}
 
 /*список в каталоге*/
 .dropdown-content {
-  font-family: "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -98,30 +115,32 @@ color: #000000;
 }
 
  /*лозунг бигборда*/
-.slide-title, .slide-title-service, .about-us, .slide-title-service, .mailing-list-wright {
+.slide-title, .about-us, .slide-title-service, .mailing-list-wright {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
-line-height: 50px;
-color: #000000;
+  line-height: 50px;
+  color: #000000;
 }
 
+.about-us {
+  color: #444444;
+}
 
 .mailing-list {
   background: #F0F0F0;
   color: #000000;
-  background-size: 100% auto;
 }
 
  /*Описание лозунга бигборда и услуг доставки, гарантии и кредита*/
 .description {
-font-family: "Rubik", sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-color: #444444;;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
 }
 
 /*характеристики слайда*/
@@ -131,7 +150,7 @@ color: #444444;;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #242424;
+  color: #000000;
  }
 
 /*Описание характеристик*/
@@ -141,9 +160,18 @@ color: #444444;;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #242424;
+  color: #444444;
 
  }
+
+.gadget-lis {
+  display: flex;
+  margin-top: 820px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 2058px;
+  height: 160px;
+}
 
 /*Навигация гаджетов*/
  .gadget-item {
@@ -151,15 +179,11 @@ color: #444444;;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-line-height: 24px;
-text-decoration: none;
-color: #000000;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: -0.02em;
  }
-
-.icons {
-  background-color: #FFE17F;
-  background-size: 160px 160px;
-}
 
 /*Блок навигации сервиса*/
 .service {
@@ -175,7 +199,7 @@ color: #000000;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #242424;
+  color: #444444;
 }
 
 /*навигации доставки*/
@@ -184,11 +208,13 @@ color: #000000;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
-line-height: 23.48px;
-text-align: center;
-background: #F0F0F0;
-color: #000000;
-background-size: 100% auto;
+  line-height: 23px;
+  text-align: center;
+  background: #F0F0F0;
+  color: #000000;
+  background-size: 100% auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 /*Описание блока "О нас"*/
@@ -208,12 +234,12 @@ background-size: 100% auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #242424;
+  color: #444444;
 }
 
 /*спиок транспортных компаний*/
 .transport-companies {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -223,119 +249,158 @@ background-size: 100% auto;
 
 /*футтер навигация: доставка, гарантия и контакты*/
 .footer-services-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-text-decoration: none;
-color: rgba(255, 255, 255, 1);
-}
-
-.page-footer footer {
-  background: #444444;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 }
 
 /*футтер навигация: адрес магазина в футере*/
-.contact-footer {
-font-family: 'Rubik', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-color: #FFFFFF;
-text-decoration-line: underline;
-}
-
-.contact-phone {
-  font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-text-decoration-line: underline;
-color: #444444;
-}
-
-/*футтер контакты адреса и номера*/
-.page-footer {
-  font-family: 'Rubik', sans-serif;
+.contact-footer, .contact-footer-phone {
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  line-height: 30px;
+  color: #FFFFFF;
+  text-decoration-line: underline;
+  text-decoration: none;
+}
+
+.contact-phone, .contact-address {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.contact-phone, .contact-footer-phone {
+text-decoration-line: underline;
 }
 
 /*хлебные крошки на 2й странице, Выбор цвета и наличия блютуза*/
 .breadcrumbs-link, .control-input, .control-input-bt {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18.96px;
-  color: #242424;
+  line-height: 19px;
   text-decoration: none;
+  color: #000000;
+
 }
 
 /*фильтр и сортировка на 2й странице*/
 .filter, .sort {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-line-height: 18.78px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /*Фильтр цвета, названия продукции и фильтр блютуза*/
-.catalog-color, .product-card-title, .catalog-bluetooth, .product-card-title {
-  font-family: 'Rubik', sans-serif;
+.catalog-character, .product-card-title {
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #242424;
+  text-decoration: none;  
+  letter-spacing: -0.02em;
+  color: #000000;
   text-decoration: none;
 }
 
 .product-card-title {
-letter-spacing: -0.02em;}
+  letter-spacing: -0.02em;
+}
 
 /*Стоимость товара*/
 .product-card-price {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21.33px;
-  color: #242424;
+  line-height: 21px;
+  color: #444444;
   text-align: right;
 }
 
 
 /*Кнопки: показать, подробнее*/
-.button-show, .button-more, .button-service, .more-about-as, .button-help, .product-card-button {
+.button-show, .button-more, .service, .button-help, .product-card-button {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-line-height: 21.13px;
-text-align: center;
-text-decoration: none;
-color: #000000;
-text-transform: uppercase;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 /*Кнопка "Загрузить еще, вперед и назад"*/
-.pagination-show-more, .button-next, .button-prew {
+.pagination-show-more {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-line-height: 18.78px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-link {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
 text-align: center;
+color: #444444;
+opacity: 0.3;
+}
+
+.button-prew-next {
+font-family: "Raleway", sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #000000;
+}
+
+/*Транспортные компании*/
+.contact-schedule-item {
+  font-family: "Rubik", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: -0.02em;
+color: #000000;
 }
 
 /*Номерация страниц*/
@@ -349,6 +414,14 @@ text-align: center;
   text-align: center;
 }
 
+/*футтер контакты адреса и номера*/
 footer {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  background: #444444;
   background-color: #444444;
 }
