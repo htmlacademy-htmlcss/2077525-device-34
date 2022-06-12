@@ -3,23 +3,23 @@
     <head>
         <title>Испытание: другой вариант главной</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="/!HTMLACADEMY/device/2077525-device-34/CSS/1.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <header class="second-page">
+        <header class="header-page">
             <a class="navigation-logo" href="index.html">
                 <img class="page-header-main-logo" src="images/logo/logo-header.svg" width="145" height="36" alt="логотип магазина Девайс"></a>
-                <form>
+                <form class="seach-navigation">
                     <p><input type="search" name="amount" placeholder="Текст поиска">
                         <input type="submit" value="Найти"></p>
                 </form>
                 <nav class="main-navigation">
                     <ul class="navigatoin-list">
                         <li class="navigation-item1">
-                            <a class="navigation-link" href="#">Коля Петухов</a>
+                            <a class="navigation-link-name" href="#">Коля Петухов</a>
                         </li>
                         <li class="navigation-item2">
-                            <a class="navigation-link" href="#">Выйти</a>
+                            <a class="navigation-link-exit" href="#">Выйти</a>
                         </li>
                         <li class="navigation-item3">
                             <a class="navigation-link" href="#">Сравнить</a>
@@ -29,56 +29,57 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="catalog-item">
-                    <button class="dropbtn">Каталог товаров
+                <div>
+                    <button class="catalog-item">Каталог товаров
                         <span class="catalog-item-open">+</span>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Виртуальная реальность</a>
-                        <a href="#">Фитнес-браслеты</a>
-                        <a href="#">Квадрокоптеры</a>
-                        <a href="catalog.html">Моноподы для селфи</a>
-                        <a href="#">Умные часы</a>
-                        <a href="#">Квадрокоптеры</a>
+                        <a class="dropdown-content" href="#">Виртуальная реальность</a>
+                        <a class="dropdown-content" href="#">Фитнес-браслеты</a>
+                        <a class="dropdown-content" href="#">Квадрокоптеры</a>
+                        <a class="dropdown-content" href="catalog.html">Моноподы для селфи</a>
+                        <a class="dropdown-content" href="#">Умные часы</a>
+                        <a class="dropdown-content" href="#">Квадрокоптеры</a>
                     </div>
                 </div>
 
                 <ul class="services-list">
                     <li class="services-name">
-                        <a href="#">ДОСТАВКА</a>
+                        <a class="services-name" href="#">ДОСТАВКА</a>
                     </li>
                     <li class="services-name">
-                        <a href="#">ГАРАНТИЯ</a>
+                        <a class="services-name" href="#">ГАРАНТИЯ</a>
                     </li>
                     <li class="services-name">
-                        <a href="#">КОНТАКТЫ</a>
+                        <a class="services-name" href="#">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </header>
             <!--MAAAAAAIIINNNN-->
             <main class="man-inner">
                 <header class="header-inner">
-                    <h1 class="inner-header-title">Моноподы для селфи</h1>
+                    <h1 class="slide-title">Моноподы для селфи</h1>
                     <ul class="breadcrumbs">
-                        <li class="breadcrumbs-item">
+                        <li class="breadcrumbs">
                             <a class="breadcrumbs-link" href="index.html">Главная</a>
                         </li>
-                        <li class="breadcrumbs-catalog">
-                            <a class="breadcrumbs-link-catalog" href="#">Каталог товаров</a>
+                        <li class="breadcrumbs">
+                            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
                         </li>
-                        <li class="breadcrumbs-item">
+                        <li class="breadcrumbs">
                             <a class="breadcrumbs-link">Моноподы для селфи</a>
                         </li>
                     </ul>
                 </header>
                 <!--Блок фильтров списка товаров-->
-                <span>Фильтр:</span>
+                <span class="filter">Фильтр:</span>
                 <section class="catalog-product">
                     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                         <!--Табличка с сортировкой по цвету checkbox-->
+                        <div class="catalog-character">Cтоимость</div>
                         <fieldset class="catalog-filter-group">
-                            <legend class="catalog-color">Цвет</legend>
+                            <legend class="catalog-character">Цвет</legend>
                             <ul class="catalog-filter-list">
                                 <li class="catalog-filter-color">
                                     <label class="control">
@@ -115,12 +116,12 @@
                         <!--Конец таблички с сортировкой по цвету-->
                         <!-- ТАбличка наличия bluetooth radio (name должен быть всегда одинаковый)-->
                         <fieldset class="catalog-filter-group">
-                            <legend class="catalog-bluetooth">Bluetooth</legend>
+                            <legend class="catalog-character">Bluetooth</legend>
                             <ul class="catalog-filter-bluetooth">
                                 <li class="catalog-filter">
                                     <label class="control">
                                         <input
-                                            class="control-input"
+                                            class="control-input-bt"
                                             type="radio"
                                             name="availability"
                                             value="yes"
@@ -131,7 +132,7 @@
                                 </li>
                                 <li class="catalog-filter">
                                     <label class="control">
-                                        <input class="control-input" type="radio" name="availability" value="no">
+                                        <input class="control-input-bt" type="radio" name="availability" value="no">
 
                                         Нет
                                     </label>
@@ -139,10 +140,10 @@
                             </ul>
                         </fieldset>
                         <!--Конец таблички bluetooth radio -->
-                        <button class="button" type="submit">Показать</button>
+                        <button class="button-show" type="submit">Показать</button>
                     </form>
                     <!--Менюшка сортировки цены-->
-                    <span>сортировка:</span>
+                    <span class="sort">сортировка:</span>
                     <select class="select-control" aria-label="Сортировка">
                         <option value="popular">Популярные</option>
                         <option value="expensive">Дорогие</option>
@@ -159,7 +160,6 @@
                                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                             </a>
                             <span class="product-card-price">500₽</span>
-                            <a class="product-card-button button" href="#">Подробнее</a>
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
@@ -167,7 +167,6 @@
                                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                             </a>
                             <span class="product-card-price">1500₽</span>
-                            <a class="product-card-button button" href="#">Подробнее</a>
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
@@ -175,7 +174,6 @@
                                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                             </a>
                             <span class="product-card-price">2500₽</span>
-                            <a class="product-card-button button" href="#">Подробнее</a>
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
@@ -187,16 +185,16 @@
                         </li>
                     </ul>
                     <!--Конец списка Карточек товаров-->
-                    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                    <button class="pagination-show-more" type="button">Загрузить ещё</button>
                     <!--пагинация, Переключение страниц-->
                     <ul class="pagination">
                         <li class="pagination-item">
-                            <a class="pagination-link pagination-prev pagination-disabled">
-                                <span class="button-prew">Назад</span>
+                            <a>
+                                <span class="button-prew-next">Назад</span>
                             </a>
                         </li>
                         <li class="paginatio-item">
-                            <a class="pagination-link pagination-current">1</a>
+                            <a class="pagination-link">1</a>
                         </li>
                         <li class="paginatio-item">
                             <a class="pagination-link" href="#">2</a>
@@ -205,14 +203,14 @@
                             <a class="pagination-link" href="#">3</a>
                         </li>
                         <li class="paginatio-item">
-                            <a class="pagination-link pagination-current">...</a>
+                            <a class="pagination-link">...</a>
                         </li>
                         <li class="paginatio-item">
                             <a class="pagination-link" href="#">15</a>
                         </li>
                         <li class="pagination-item">
-                            <a class="pagination-link pagination-next" href="#">
-                                <span class="button-next">Вперед</span>
+                            <a href="#">
+                                <span class="button-prew-next">Вперед</span>
                             </a>
                         </li>
                     </ul>
@@ -251,7 +249,9 @@
                 </section>
                 <div class="telephone">Тел.: +7 (812) 812-12-12</div>
                 <div>
-                    <a href="http://htmlacademy.ru">.htmlacademy</a>
+                    <a href="http://htmlacademy.ru">
+                    <img class="page-header-main-logo" src="images/icons/htmlacademy.svg" width="115" height="33" alt="ссылка на htmlacademy">
+                </a>
                 </div>
                 <nav class="footer-services">
                     <ul class="footer-services-list">
